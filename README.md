@@ -1,7 +1,6 @@
 # QuickId -- Simple id generator
 
 ##### 加锁一时爽，效率火葬场
-##### 听说用乐观锁会好些，改天看看
 
 ## Installation
 ```xml
@@ -27,12 +26,9 @@ quick-id:
   sharding-bits: 11
 ```
 
-##### shardingId
-实例ID，要保证每个实例不同
-##### seq-bits
-一个millisecond内的序号长度
-##### sharding-bits 
-实例ID的长度
+##### sharding-id - 实例ID，要保证每个实例不同
+##### seq-bits - 一个millisecond内的序号长度，每个实例配置要相同
+##### sharding-bits - 实例ID的长度，每个实例配置要相同
 
 ##### seq-bits和sharding-bits可以不配置，默认都是11。
 ##### seq-bits + sharding-bits必须小于等于22，否则long型的id装不下会溢出。
