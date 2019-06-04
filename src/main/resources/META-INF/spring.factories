@@ -1,4 +1,4 @@
 # Auto Configure
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.lyw.quickid.utils.QuickIdUtils,\
-com.lyw.quickid.config.AutoConfiguration
+com.lyw.quickid.config.QuickIdAutoConfiguration

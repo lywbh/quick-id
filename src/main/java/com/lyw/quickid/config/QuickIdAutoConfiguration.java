@@ -9,11 +9,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @Conditional(QuickIdCondition.class)
 @EnableConfigurationProperties(GeneratorProperties.class)
-public class AutoConfiguration {
+public class QuickIdAutoConfiguration {
 
     private GeneratorProperties properties;
 
-    public AutoConfiguration(GeneratorProperties properties) {
+    public QuickIdAutoConfiguration(GeneratorProperties properties) {
         this.properties = properties;
     }
 
