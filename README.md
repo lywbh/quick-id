@@ -36,7 +36,7 @@ quick-id:
 
 ##### seq-bits和sharding-bits可以不配置，默认都是11。
 ##### seq-bits + sharding-bits必须小于等于22，否则long型的id装不下会溢出。
-##### sharding-id不要超出自己配置的大小，比如sharding-bits=4，就只能有0~16个实例。
+##### sharding-id不要超出自己配置的大小，比如sharding-bits=4，就只能有0~15个实例。
 
 ## Use
 ```java
